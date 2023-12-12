@@ -1,0 +1,222 @@
+/* styles.css */
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1{
+  font-size: 3em;
+}
+#corps{
+  font-family: 'Times New Roman', Times, serif;
+}
+#corps p, #corps label, #corps label[type="submit"]{
+  text-align : justify;
+  font-size: 1.25em;
+}
+
+/*Legend Map*/
+.info.legend {
+  background-color: white;
+  padding: 1em;
+}
+
+.legend-item {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.legend-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+/**/
+header{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 9px 16px;
+  height: 3em;
+  border-bottom: solid 1px #9b9b9b;;
+  font-family: Graphik,-apple-system,blinkmacsystemfont,roboto,helvetica neue,segoe ui,arial,sans-serif !important;
+  margin-bottom: 2em;
+}
+
+.header_left{
+  display: flex;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  justify-content: flex-start;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0 0 0 5vw;
+  z-index: 1;
+  list-style-type: none;
+}
+.header_left:first-child{
+  margin-left: 0;
+}
+.header_left > li {
+  margin: 0 16px;
+}
+
+.header_center{
+  display: flex;
+  align-items: center;
+  width: auto;
+  flex-direction: column;
+  margin: 6px 0 0 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.header_right{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 25%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0 5vw 0 0;
+}
+
+.header_logo_A{
+  width: 26px;
+  height: 40px;
+  fill: #e7131a;
+}
+
+.search_icon{
+  width: 16px;
+  height: 16px;
+  fill: black;
+}
+
+.header_logo_TheAtlantic{
+  width: 175px;
+  height: 27px;
+}
+
+#header_Subscribe{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 18px 11px;
+  border: 1px solid #d0021b;
+  border-radius: 4px;
+  background-color: #e7131a;
+  color: white;
+}
+
+/**/
+.menu-icon {
+  top: 3px;
+  width: 21px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  left: 0;
+  transition: 0.4s;
+}
+
+.bar::before,
+.bar::after {
+  content: '';
+  width: 100%;
+  height: 1.5px;
+  background-color: #333;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.bar::before {
+  top: -7px;
+}
+
+.bar::after {
+  top: 7px;
+}
+
+
+.grapDiv{
+  width: 500px;
+  height: auto;
+}
+
+/**/
+
+.category{
+  color: #e7131a;
+  padding: 20px 0 !important;
+}
+.corpsText{
+margin: auto;  
+width: 35vw;
+padding-bottom: 20px;
+}
+.corpsText>p{
+  padding: 10px 0;
+}
+
+.corpsImg{
+  margin: auto;
+  width: 50vw;
+  padding: 20px 0;
+}
+
+#imgTitle{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.credits{
+  color: #9b9b9b;
+  font-size: .90em !important;
+}
+
+#timeDiv{
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 2em;
+  padding: 30px 0;
+  border-bottom: solid 1px #9b9b9b;
+}
+#button_The_Atlantic{
+  
+  height: 100%;
+}
+
+#map{
+  width: 100%;
+  height: 50vh;
+}
+
+#formFilters{
+margin: 10px 0;
+}
+
+#formFilters input{
+  margin: 0 5px;
+}
+#submitFilters{
+  padding: 5px 9px 6px;
+  border: 1px solid #d0021b;
+  border-radius: 4px;
+  background-color: #e7131a;
+  color: white;
+}
